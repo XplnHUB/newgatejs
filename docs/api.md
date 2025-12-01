@@ -21,7 +21,7 @@ The main application class for creating an Newgate server.
 ### Constructor
 
 ```javascript
-import App from 'newgate';
+import App from 'newgatejs';
 
 const app = new App();
 ```
@@ -551,7 +551,7 @@ File structure:
 Parse and extract URL components.
 
 ```javascript
-import parseURL from 'newgate/utils/urlParser.js';
+import parseURL from 'newgatejs/utils/urlParser.js';
 
 const parsed = parseURL('/search?q=test#results');
 // {
@@ -572,7 +572,7 @@ const parsed = parseURL('/search?q=test#results');
 Recursively merge objects.
 
 ```javascript
-import deepMerge from 'newgate/utils/deepMerge.js';
+import deepMerge from 'newgatejs/utils/deepMerge.js';
 
 const obj1 = { a: 1, b: { c: 2 } };
 const obj2 = { b: { d: 3 }, e: 4 };
@@ -588,7 +588,7 @@ const merged = deepMerge(obj1, obj2);
 ### Basic Server
 
 ```javascript
-import App from 'newgate';
+import App from 'newgatejs';
 
 const app = new App();
 
@@ -604,7 +604,7 @@ app.listen(3000, () => {
 ### REST API
 
 ```javascript
-import App from 'newgate';
+import App from 'newgatejs';
 
 const app = new App();
 const users = [];
@@ -634,7 +634,7 @@ app.listen(3000);
 ### Multi-Format API
 
 ```javascript
-import App from 'newgate';
+import App from 'newgatejs';
 
 const app = new App();
 
@@ -660,7 +660,7 @@ app.listen(3000);
 ### With Middleware
 
 ```javascript
-import App from 'newgate';
+import App from 'newgatejs';
 
 const app = new App();
 

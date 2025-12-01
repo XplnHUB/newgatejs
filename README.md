@@ -2,9 +2,9 @@
 
 > A modern, lightweight, and multi-format backend framework for Node.js.
 
-[![npm version](https://img.shields.io/npm/v/newgate.svg)](https://www.npmjs.com/package/newgate)
-[![License](https://img.shields.io/npm/l/newgate.svg)](https://github.com/XplnHUB/newgate/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/XplnHUB/newgate/test.yml)](https://github.com/XplnHUB/newgate/actions)
+[![npm version](https://img.shields.io/npm/v/newgatejs.svg)](https://www.npmjs.com/package/newgatejs)
+[![License](https://img.shields.io/npm/l/newgatejs.svg)](https://github.com/XplnHUB/newgatejs/blob/main/LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/XplnHUB/newgatejs/test.yml)](https://github.com/XplnHUB/newgatejs/actions)
 
 ## Overview
 
@@ -25,7 +25,7 @@ Whether you're building a REST API, a data processing service, or an IoT backend
 ## Installation
 
 ```bash
-npm install newgate
+npm install newgatejs
 ```
 
 ## Quick Start
@@ -33,7 +33,7 @@ npm install newgate
 Create a simple server in `index.js`:
 
 ```javascript
-import App from 'newgate';
+import App from 'newgatejs';
 
 const app = new App();
 
@@ -55,7 +55,7 @@ app.post("/binary", (req, res) => {
 });
 
 // Start server
-app.listen(3000, () => console.log("newgate running on http://localhost:3000"));
+app.listen(3000, () => console.log("newgatejs running on http://localhost:3000"));
 ```
 
 ---

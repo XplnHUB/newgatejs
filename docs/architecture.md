@@ -100,9 +100,9 @@ The `enhanceResponse` function adds helper methods to the native `ServerResponse
 ## Module Structure
 
 ```
-newgate/
+newgatejs/
 ├── bin/
-│   └── newgate.js          # CLI entry point
+│   └── newgatejs.js          # CLI entry point
 ├── src/
 │   ├── core/
 │   │   ├── app.js      # Main App class
@@ -203,7 +203,7 @@ Helper functions for common tasks.
 ## Module Structure
 
 ```
-newgate/
+newgatejs/
 ├── src/
 │   ├── core/
 │   │   ├── app.js           # Main App class

@@ -8,7 +8,7 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "newgate": "./bin/newgate.js"
+    "newgatejs": "./bin/newgatejs.js"
   },
   "scripts": {
     "test": "vitest",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XplnHUB/newgate.git"
+    "url": "git+https://github.com/XplnHUB/newgatejs.git"
   },
   "keywords": [
     "node",
@@ -46,7 +46,7 @@
     "file-upload",
     "iot",
     "edge",
-    "newgate",
+    "newgatejs",
     "webframework",
     "lightweight",
     "minimal",
@@ -55,9 +55,9 @@
   "author": "CodeMaverick-143 && XplnHUB",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/XplnHUB/newgate/issues"
+    "url": "https://github.com/XplnHUB/newgatejs/issues"
   },
-  "homepage": "https://github.com/XplnHUB/newgate#readme",
+  "homepage": "https://github.com/XplnHUB/newgatejs#readme",
   "dependencies": {
     "busboy": "^1.6.0",
     "csv-parse": "^5.6.0",

@@ -17,7 +17,7 @@ function showHelp() {
 Newgate CLI - Multi-format Backend Framework
 
 Usage:
-  newgate <command> [options]
+  newgatejs <command> [options]
 
 Commands:
   create <name>     Create a new Newgate project
@@ -25,9 +25,9 @@ Commands:
   version           Show version information
 
 Examples:
-  newgate create my-api
-  newgate help
-  newgate version
+  newgatejs create my-api
+  newgatejs help
+  newgatejs version
 `);
 }
 
@@ -67,7 +67,7 @@ function createProject(projectName) {
       test: 'vitest'
     },
     dependencies: {
-      newgate: '^1.0.0'
+      newgatejs: '^1.0.0'
     },
     devDependencies: {
       vitest: '^1.6.1'
@@ -80,7 +80,7 @@ function createProject(projectName) {
   );
 
   // Create main app file
-  const appCode = `import App from 'newgate';
+  const appCode = `import App from 'newgatejs';
 
 const app = new App();
 
@@ -166,7 +166,7 @@ npm start
 
 ## Documentation
 
-For more information about Newgate, visit: https://github.com/XplnHUB/newgate
+For more information about Newgate, visit: https://github.com/XplnHUB/newgatejs
 `;
 
   fs.writeFileSync(path.join(projectPath, 'README.md'), readme);
@@ -190,12 +190,12 @@ if (!command || command === 'help' || command === '--help' || command === '-h') 
   const projectName = args[1];
   if (!projectName) {
     console.error('Error: Project name is required');
-    console.error('Usage: newgate create <project-name>');
+    console.error('Usage: newgatejs create <project-name>');
     process.exit(1);
   }
   createProject(projectName);
 } else {
   console.error(`Error: Unknown command "${command}"`);
-  console.error('Run "newgate help" for usage information');
+  console.error('Run "newgatejs help" for usage information');
   process.exit(1);
 }

@@ -22,7 +22,7 @@ This guide covers security best practices when using the Newgate framework.
 Always validate and sanitize user input before processing:
 
 ```javascript
-import App from 'newgate';
+import App from 'newgatejs';
 
 const app = new App();
 
@@ -102,7 +102,7 @@ app.post('/import', (req, res) => {
 Always set appropriate file upload limits:
 
 ```javascript
-import App from 'newgate';
+import App from 'newgatejs';
 
 const app = new App();
 
@@ -366,7 +366,7 @@ npm update
 
 ## Reporting Vulnerabilities
 
-If you discover a security vulnerability in Newgate, please do **not** open a public issue. Instead, email us at security@newgate.dev. We will investigate and address the issue promptly.
+If you discover a security vulnerability in Newgate, please do **not** open a public issue. Instead, email us at security@newgatejs.dev. We will investigate and address the issue promptly.
 ```
 
 ### Validate XML Structure
@@ -410,7 +410,7 @@ app.post('/xml-data', (req, res) => {
 Always restrict CORS origins in production:
 
 ```javascript
-import App from 'newgate';
+import App from 'newgatejs';
 
 const app = new App();
 
