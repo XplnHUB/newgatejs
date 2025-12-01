@@ -1,6 +1,6 @@
-<img# Newgate
+<img# CMX
 
-![Newgate Banner](https://via.placeholder.com/1200x300?text=Newgate+Framework)
+![CMX Banner](https://via.placeholder.com/1200x300?text=CMX+Framework)
 
 > A modern, lightweight, and multi-format backend framework for Node.js.
 
