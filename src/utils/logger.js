@@ -1,5 +1,5 @@
 /**
- * Simple logger utility for ARX
+ * Simple logger utility for Holoway
  * Supports different log levels and formatted output
  */
 
@@ -23,7 +23,7 @@ class Logger {
   constructor(options = {}) {
     this.level = LOG_LEVELS[options.level?.toUpperCase()] ?? LOG_LEVELS.INFO;
     this.useColors = options.useColors !== false;
-    this.prefix = options.prefix || 'ARX';
+    this.prefix = options.prefix || 'Holoway';
   }
 
   _formatMessage(level, message, data) {
@@ -80,7 +80,7 @@ class Logger {
       const start = Date.now();
       const originalEnd = res.end;
 
-      res.end = function(...args) {
+      res.end = function (...args) {
         const duration = Date.now() - start;
         const status = res.statusCode;
         const statusColor = status >= 400 ? COLORS.RED : COLORS.BLUE;

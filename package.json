@@ -1,11 +1,11 @@
 {
-  "name": "backline",
-  "version": "1.0.0",
+  "name": "holoway",
+  "version": "1.1.0",
   "description": "modern Node.js backend framework designed for developers who want to handle multiple data formats effortlessly. It combines the simplicity of Express-style routing with automatic parsing for JSON, CSV, XML, YAML, form-data, and binary data.",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "arx": "./bin/backline.js"
+    "holoway": "./bin/holoway.js"
   },
   "scripts": {
     "test": "vitest",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XplnHUB/arx.git"
+    "url": "git+https://github.com/XplnHUB/holoway.git"
   },
   "keywords": [
     "node",
@@ -43,7 +43,7 @@
     "file-upload",
     "iot",
     "edge",
-    "arx",
+    "holoway",
     "webframework",
     "lightweight",
     "minimal",
@@ -52,9 +52,9 @@
   "author": "CodeMaverick-143 && XplnHUB",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/XplnHUB/arx/issues"
+    "url": "https://github.com/XplnHUB/holoway/issues"
   },
-  "homepage": "https://github.com/XplnHUB/arx#readme",
+  "homepage": "https://github.com/XplnHUB/holoway#readme",
   "dependencies": {
     "busboy": "^1.6.0",
     "csv-parse": "^5.6.0",

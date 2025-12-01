@@ -1,6 +1,6 @@
-# ARX Troubleshooting Guide
+# Holoway Troubleshooting Guide
 
-Common issues and solutions when using the ARX framework.
+Common issues and solutions when using the Holoway framework.
 
 ## Table of Contents
 
@@ -154,7 +154,7 @@ app.post('/yaml', (req, res) => {
 
 ```javascript
 // Increase limits if needed
-const parseFormData = require('arx/src/parsers/formdata.js');
+const parseFormData = require('holoway/src/parsers/formdata.js');
 
 app.post('/upload', (req, res) => {
   try {
@@ -572,11 +572,11 @@ function cacheSet(key, value) {
 
 ## Error Messages
 
-### "Cannot find module 'arx'"
+### "Cannot find module 'holoway'"
 
 **Solution**:
 ```bash
-npm install arx
+npm install holoway
 ```
 
 ### "Port already in use"
@@ -641,7 +641,7 @@ If you encounter issues not covered here:
 1. Check the [API Documentation](./api.md)
 2. Review [Architecture Overview](./architecture.md)
 3. Check [Security Practices](./security.md)
-4. Open an issue on [GitHub](https://github.com/XplnHUB/arx/issues)
+4. Open an issue on [GitHub](https://github.com/XplnHUB/holoway/issues)
 5. Check existing issues for similar problems
 
 ---

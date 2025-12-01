@@ -1,10 +1,10 @@
-<img width="850" height="300" alt="banner_arx" src="https://github.com/user-attachments/assets/8242da41-1420-4cd9-aebe-776d7d3be3c9" />
+<img width="850" height="300" alt="banner_holoway" src="https://github.com/user-attachments/assets/8242da41-1420-4cd9-aebe-776d7d3be3c9" />
 
-# arx
+# holoway
 
-**arx** is a modern Node.js backend framework designed for developers who want to handle multiple data formats effortlessly. It combines the simplicity of Express-style routing with automatic parsing for JSON, CSV, XML, YAML, form-data, and binary data.
+**holoway** is a modern Node.js backend framework designed for developers who want to handle multiple data formats effortlessly. It combines the simplicity of Express-style routing with automatic parsing for JSON, CSV, XML, YAML, form-data, and binary data.
 
-arx is ideal for building APIs, file processing services, IoT backends, and any server that needs to work with multiple data formats without extra boilerplate.
+holoway is ideal for building APIs, file processing services, IoT backends, and any server that needs to work with multiple data formats without extra boilerplate.
 
 ---
 
@@ -43,17 +43,17 @@ arx is ideal for building APIs, file processing services, IoT backends, and any 
 ## Installation
 
 ```bash
-npm install arx
-```
+npm install holoway
+````
 
 ---
 
 ## Quick Start
 
 ```js
-import arx from "arx";
+import holoway from "holoway";
 
-const app = arx();
+const app = holoway();
 
 // Middleware
 app.use((req, res, next) => {
@@ -82,7 +82,7 @@ app.post("/binary", (req, res) => {
 });
 
 // Start server
-app.listen(3000, () => console.log("arx running on http://localhost:3000"));
+app.listen(3000, () => console.log("holoway running on http://localhost:3000"));
 ```
 
 ---

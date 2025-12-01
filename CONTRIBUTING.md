@@ -1,6 +1,6 @@
-# Contributing to ARX
+# Contributing to Holoway
 
-Thank you for your interest in contributing to ARX! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to Holoway! This document provides guidelines and instructions for contributing.
 
 ## Code of Conduct
 
@@ -18,13 +18,13 @@ Be respectful, inclusive, and professional. We're committed to providing a welco
 1. Fork the repository
 2. Clone your fork:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/arx.git
-   cd arx
+   git clone https://github.com/YOUR_USERNAME/holoway.git
+   cd holoway
    ```
 
 3. Add upstream remote:
    ```bash
-   git remote add upstream https://github.com/XplnHUB/arx.git
+   git remote add upstream https://github.com/XplnHUB/holoway.git
    ```
 
 4. Install dependencies:
@@ -229,7 +229,6 @@ describe('Feature Name', () => {
 ## Documentation
 
 ### Updating Documentation
-
 1. Update relevant `.md` files in `/docs`
 2. Update README.md if needed
 3. Update code comments
@@ -311,7 +310,7 @@ Follow semantic versioning: `MAJOR.MINOR.PATCH`
 
 ## Thank You!
 
-Thank you for contributing to ARX! Your efforts help make this project better for everyone.
+Thank you for contributing to Holoway! Your efforts help make this project better for everyone.
 
 ---
 

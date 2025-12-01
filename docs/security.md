@@ -1,6 +1,6 @@
-# ARX Security Practices
+# Holoway Security Practices
 
-This guide covers security best practices when using the ARX framework.
+This guide covers security best practices when using the Holoway framework.
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@ This guide covers security best practices when using the ARX framework.
 Always validate and sanitize user input before processing:
 
 ```javascript
-import App from 'arx';
+import App from 'holoway';
 
 const app = new App();
 
@@ -102,7 +102,7 @@ app.post('/import', (req, res) => {
 Always set appropriate file upload limits:
 
 ```javascript
-import App from 'arx';
+import App from 'holoway';
 
 const app = new App();
 
@@ -226,7 +226,7 @@ app.post('/upload', (req, res) => {
 
 ### XXE Protection (Enabled by Default)
 
-ARX enables XXE protection by default:
+Holoway enables XXE protection by default:
 
 ```javascript
 // Safe by default - external entities disabled
@@ -243,7 +243,7 @@ app.post('/data', (req, res) => {
 Only disable safe mode if you absolutely need it:
 
 ```javascript
-import parseXML from 'arx/src/parsers/xml.js';
+import parseXML from 'holoway/src/parsers/xml.js';
 
 // NOT RECOMMENDED - Only use if you understand the risks
 const xml = await parseXML(buffer, { safeMode: false });
@@ -290,7 +290,7 @@ app.post('/xml-data', (req, res) => {
 Always restrict CORS origins in production:
 
 ```javascript
-import App from 'arx';
+import App from 'holoway';
 
 const app = new App();
 

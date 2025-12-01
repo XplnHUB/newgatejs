@@ -1,6 +1,6 @@
-# ARX Architecture Overview
+# Holoway Architecture Overview
 
-This document describes the internal architecture and design patterns of the ARX framework.
+This document describes the internal architecture and design patterns of the Holoway framework.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ This document describes the internal architecture and design patterns of the ARX
 
 ## Overview
 
-ARX is a lightweight, multi-format backend framework built on Node.js's native HTTP module. It provides:
+Holoway is a lightweight, multi-format backend framework built on Node.js's native HTTP module. It provides:
 
 - **Express-like routing** with parameter and wildcard support
 - **Automatic content-type detection** and parsing
@@ -214,7 +214,7 @@ Helper functions for common tasks.
 ## Module Structure
 
 ```
-arx/
+holoway/
 ├── src/
 │   ├── core/
 │   │   ├── app.js           # Main App class

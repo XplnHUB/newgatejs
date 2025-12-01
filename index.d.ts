@@ -1,15 +1,15 @@
 import { IncomingMessage, ServerResponse } from 'http';
 
-export interface ARXRequest extends IncomingMessage {
+export interface HolowayRequest extends IncomingMessage {
   body?: any;
   bodyType?: 'json' | 'csv' | 'xml' | 'yaml' | 'formdata' | 'binary' | null;
   params?: Record<string, string>;
   query?: Record<string, string | boolean>;
 }
 
-export interface ARXResponse extends ServerResponse {
-  status(code: number): ARXResponse;
-  set(header: string, value: string): ARXResponse;
+export interface HolowayResponse extends ServerResponse {
+  status(code: number): HolowayResponse;
+  set(header: string, value: string): HolowayResponse;
   json(data: any): void;
   send(data: string | Buffer): void;
   csv(data: string): void;
@@ -24,17 +24,17 @@ export interface ARXResponse extends ServerResponse {
 /**
  * Route handler function
  */
-export type RouteHandler = (req: ARXRequest, res: ARXResponse, next?: (err?: Error) => void) => void | Promise<void>;
+export type RouteHandler = (req: HolowayRequest, res: HolowayResponse, next?: (err?: Error) => void) => void | Promise<void>;
 
 /**
  * Middleware function
  */
-export type Middleware = (req: ARXRequest, res: ARXResponse, next: (err?: Error) => void) => void | Promise<void>;
+export type Middleware = (req: HolowayRequest, res: HolowayResponse, next: (err?: Error) => void) => void | Promise<void>;
 
 /**
  * Error handler middleware
  */
-export type ErrorHandler = (err: Error, req: ARXRequest, res: ARXResponse, next: (err?: Error) => void) => void | Promise<void>;
+export type ErrorHandler = (err: Error, req: HolowayRequest, res: HolowayResponse, next: (err?: Error) => void) => void | Promise<void>;
 
 /**
  * CORS options

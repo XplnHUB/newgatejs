@@ -7,34 +7,34 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const COMMANDS = {
-  create: 'Create a new ARX project',
+  create: 'Create a new Holoway project',
   help: 'Show help information',
   version: 'Show version'
 };
 
 function showHelp() {
   console.log(`
-ARX CLI - Multi-format Backend Framework
+Holoway CLI - Multi-format Backend Framework
 
 Usage:
-  arx <command> [options]
+  holoway <command> [options]
 
 Commands:
-  create <name>     Create a new ARX project
+  create <name>     Create a new Holoway project
   help              Show this help message
   version           Show version information
 
 Examples:
-  arx create my-api
-  arx help
-  arx version
+  holoway create my-api
+  holoway help
+  holoway version
 `);
 }
 
 function showVersion() {
   const packagePath = path.join(__dirname, '../package.json');
   const pkg = JSON.parse(fs.readFileSync(packagePath, 'utf-8'));
-  console.log(`ARX v${pkg.version}`);
+  console.log(`Holoway v${pkg.version}`);
 }
 
 function createProject(projectName) {
@@ -58,7 +58,7 @@ function createProject(projectName) {
   const packageJson = {
     name: projectName,
     version: '1.0.0',
-    description: 'ARX API',
+    description: 'Holoway API',
     type: 'module',
     main: 'src/index.js',
     scripts: {
@@ -67,7 +67,7 @@ function createProject(projectName) {
       test: 'vitest'
     },
     dependencies: {
-      arx: '^1.0.0'
+      holoway: '^1.0.0'
     },
     devDependencies: {
       vitest: '^1.6.1'
@@ -80,7 +80,7 @@ function createProject(projectName) {
   );
 
   // Create main app file
-  const appCode = `import App from 'arx';
+  const appCode = `import App from 'holoway';
 
 const app = new App();
 
@@ -133,7 +133,7 @@ build/
   // Create README
   const readme = `# ${projectName}
 
-An ARX API project.
+An Holoway API project.
 
 ## Getting Started
 
@@ -166,7 +166,7 @@ npm start
 
 ## Documentation
 
-For more information about ARX, visit: https://github.com/XplnHUB/arx
+For more information about Holoway, visit: https://github.com/XplnHUB/holoway
 `;
 
   fs.writeFileSync(path.join(projectPath, 'README.md'), readme);
@@ -182,20 +182,20 @@ For more information about ARX, visit: https://github.com/XplnHUB/arx
 const args = process.argv.slice(2);
 const command = args[0];
 
-if (!command || command === 'help') {
+if (!command || command === 'help' || command === '--help' || command === '-h') {
   showHelp();
-} else if (command === 'version') {
+} else if (command === 'version' || command === '--version' || command === '-v') {
   showVersion();
 } else if (command === 'create') {
   const projectName = args[1];
   if (!projectName) {
     console.error('Error: Project name is required');
-    console.error('Usage: arx create <project-name>');
+    console.error('Usage: holoway create <project-name>');
     process.exit(1);
   }
   createProject(projectName);
 } else {
   console.error(`Error: Unknown command "${command}"`);
-  console.error('Run "arx help" for usage information');
+  console.error('Run "holoway help" for usage information');
   process.exit(1);
 }
