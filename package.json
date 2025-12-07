@@ -8,7 +8,7 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "newgatejs": "./bin/newgatejs.js"
+    "newgatejs": "bin/newgatejs.js"
   },
   "scripts": {
     "test": "vitest",
