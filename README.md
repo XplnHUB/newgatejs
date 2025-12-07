@@ -3,8 +3,9 @@
 > A modern, lightweight, and multi-format backend framework for Node.js.
 
 [![npm version](https://img.shields.io/npm/v/newgatejs.svg)](https://www.npmjs.com/package/newgatejs)
+[![npm downloads](https://img.shields.io/npm/dm/newgatejs.svg)](https://www.npmjs.com/package/newgatejs)
+[![npm total downloads](https://img.shields.io/npm/dt/newgatejs.svg)](https://www.npmjs.com/package/newgatejs)
 [![License](https://img.shields.io/npm/l/newgatejs.svg)](https://github.com/XplnHUB/newgatejs/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/XplnHUB/newgatejs/test.yml)](https://github.com/XplnHUB/newgatejs/actions)
 
 ## Overview
 
